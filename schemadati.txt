@@ -1,0 +1,115 @@
+agenzia
+agente
+annuncioid
+codice
+creato
+modifica
+scadenza
+cantiereID
+nazione
+regione
+provincia
+comune
+comune_istat
+zona
+indirizzo
+civico
+latituidine
+longitudine
+tipologia
+tipologia2
+categoria
+categoria
+categoria
+homepage
+investimento
+prestigio
+offerta
+single
+coppie
+famiglie
+aste giudiziarie
+affitto riscatto
+personalizzato 1
+personalizzato2
+personalizzato3
+prezzo
+prezzo riservato
+prezzo spese
+anno
+mq
+mqcalpespestabili
+mqbox
+mqgiardino
+mqbalconi
+mqmansarda
+mqtaverna
+mqterrazzo
+mqcantina
+mqsolaio
+vani
+camere
+doppiecamere
+camere singole
+letti
+bagni
+balconi
+terrazzi
+piano
+livelli interni
+pianicondominio
+unitacondominio
+box
+postiauto
+classe
+classe coefficente
+classe_UM
+scheda_statoimmobile
+scheda_grado
+scheda_posizipone
+scheda panorama
+scheda orientamento
+scheda latiliberi
+scheda_giardino
+scheda arredi
+scheda tiposoggiorno
+scheda tipo cucina
+scheda tipo impianto
+scheda acqua calda
+scheda infissi
+scheda serramenti
+scheda persiana
+scheda pavimento giorno
+scheda pavimento notte
+scheda pavimento cucina
+scheda pavimento bagno
+scheda accesso disabili
+scheda balconi
+scheda terrazzi
+titolo
+titolo en
+titolo de
+titolo fr
+titolo es
+titolo ru
+titolo fry
+descrizione
+descrizione en
+descrizione de
+descrizione fr
+descrizione es
+descrizione ru
+descrizione fly
+broker
+foto
+foto
+foto
+valuta
+prestazione energetica estate
+prestazione energetica inverno
+cap
+ufficio
+ammedias
+	amfoto tipo generic ordine='0'
+	amfoto tipo generic ordine='1'
+	amfoto tipo generic ordine='2'

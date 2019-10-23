@@ -1,0 +1,295 @@
+<?xml version="1.0"?>
+<root>
+  <row>
+	<field name="contactid">306124</field>
+	<field name="contact_no">CON7</field>
+	<field name="accountid">306061</field>
+	<field name="salutation"></field>
+	<field name="firstname"></field>
+	<field name="lastname">Uff. Amministrazione</field>
+	<field name="email">info@smart1.it</field>
+	<field name="phone"></field>
+	<field name="mobile"></field>
+	<field name="title"></field>
+	<field name="department"></field>
+	<field name="fax"></field>
+	<field name="reportsto">0</field>
+	<field name="training" xsi:nil="true" />
+	<field name="usertype" xsi:nil="true" />
+	<field name="contacttype" xsi:nil="true" />
+	<field name="otheremail" xsi:nil="true" />
+	<field name="secondaryemail"></field>
+	<field name="donotcall">0</field>
+	<field name="emailoptout">0</field>
+	<field name="imagename"></field>
+	<field name="reference">0</field>
+	<field name="notify_owner">0</field>
+	<field name="isconvertedfromlead">0</field>
+	<field name="tags"></field>
+	<field name="fe_cod_fisc"></field>
+	<field name="fe_cod_destinatario"></field>
+	<field name="fe_formato_trasmissione" xsi:nil="true" />
+	<field name="fe_codice_cig"></field>
+	<field name="fe_pec"></field>
+	<field name="fe_nome"></field>
+	<field name="fe_cognome"></field>
+	<field name="fe_cod_nazione"></field>
+	<field name="agent1">0</field>
+	<field name="agent2">0</field>
+	<field name="smart1identifier">b0567b2c-eaf3-4b84-8cd7-ccbeb2458d30</field>
+	<field name="accountid">306061</field>
+	<field name="account_no">ACC1</field>
+	<field name="accountname">Farmacia Rossi</field>
+	<field name="parentid">0</field>
+	<field name="account_type">Customer</field>
+	<field name="industry" xsi:nil="true" />
+	<field name="annualrevenue">0.00000000</field>
+	<field name="rating" xsi:nil="true" />
+	<field name="ownership"></field>
+	<field name="siccode"></field>
+	<field name="tickersymbol" xsi:nil="true" />
+	<field name="phone">0123-1234567</field>
+	<field name="otherphone"></field>
+	<field name="email1">info@smart1.it</field>
+	<field name="email2"></field>
+	<field name="website"></field>
+	<field name="fax">0123-1234567</field>
+	<field name="employees">0</field>
+	<field name="emailoptout">0</field>
+	<field name="notify_owner">0</field>
+	<field name="isconvertedfromlead">0</field>
+	<field name="tags"></field>
+	<field name="fe_cod_fisc"></field>
+	<field name="fe_cod_destinatario"></field>
+	<field name="fe_formato_trasmissione" xsi:nil="true" />
+	<field name="fe_codice_cig"></field>
+	<field name="fe_pec"></field>
+	<field name="fe_nome"></field>
+	<field name="fe_cognome"></field>
+	<field name="fe_cod_nazione"></field>
+	<field name="algaccountvat">00871550240</field>
+	<field name="algaccountfc"></field>
+	<field name="agent1">14</field>
+	<field name="agent2">0</field>
+	<field name="smart1identifier">36b7a834-c795-4b53-8a21-5c842d3daa66</field>
+  </row>
+  <row>
+	<field name="contactid">306125</field>
+	<field name="contact_no">CON8</field>
+	<field name="accountid">306061</field>
+	<field name="salutation"></field>
+	<field name="firstname"></field>
+	<field name="lastname">Uff. Acquisti</field>
+	<field name="email">commerciale@ribo.it</field>
+	<field name="phone"></field>
+	<field name="mobile"></field>
+	<field name="title"></field>
+	<field name="department"></field>
+	<field name="fax"></field>
+	<field name="reportsto">0</field>
+	<field name="training" xsi:nil="true" />
+	<field name="usertype" xsi:nil="true" />
+	<field name="contacttype" xsi:nil="true" />
+	<field name="otheremail" xsi:nil="true" />
+	<field name="secondaryemail"></field>
+	<field name="donotcall">0</field>
+	<field name="emailoptout">0</field>
+	<field name="imagename"></field>
+	<field name="reference">0</field>
+	<field name="notify_owner">0</field>
+	<field name="isconvertedfromlead">0</field>
+	<field name="tags"></field>
+	<field name="fe_cod_fisc"></field>
+	<field name="fe_cod_destinatario"></field>
+	<field name="fe_formato_trasmissione" xsi:nil="true" />
+	<field name="fe_codice_cig"></field>
+	<field name="fe_pec"></field>
+	<field name="fe_nome"></field>
+	<field name="fe_cognome"></field>
+	<field name="fe_cod_nazione"></field>
+	<field name="agent1">0</field>
+	<field name="agent2">0</field>
+	<field name="smart1identifier">d5e1102f-d8fa-4fb4-844e-1dd499c54371</field>
+	<field name="accountid">306061</field>
+	<field name="account_no">ACC1</field>
+	<field name="accountname">Farmacia Rossi</field>
+	<field name="parentid">0</field>
+	<field name="account_type">Customer</field>
+	<field name="industry" xsi:nil="true" />
+	<field name="annualrevenue">0.00000000</field>
+	<field name="rating" xsi:nil="true" />
+	<field name="ownership"></field>
+	<field name="siccode"></field>
+	<field name="tickersymbol" xsi:nil="true" />
+	<field name="phone">0123-1234567</field>
+	<field name="otherphone"></field>
+	<field name="email1">info@smart1.it</field>
+	<field name="email2"></field>
+	<field name="website"></field>
+	<field name="fax">0123-1234567</field>
+	<field name="employees">0</field>
+	<field name="emailoptout">0</field>
+	<field name="notify_owner">0</field>
+	<field name="isconvertedfromlead">0</field>
+	<field name="tags"></field>
+	<field name="fe_cod_fisc"></field>
+	<field name="fe_cod_destinatario"></field>
+	<field name="fe_formato_trasmissione" xsi:nil="true" />
+	<field name="fe_codice_cig"></field>
+	<field name="fe_pec"></field>
+	<field name="fe_nome"></field>
+	<field name="fe_cognome"></field>
+	<field name="fe_cod_nazione"></field>
+	<field name="algaccountvat">00871550240</field>
+	<field name="algaccountfc"></field>
+	<field name="agent1">14</field>
+	<field name="agent2">0</field>
+	<field name="smart1identifier">36b7a834-c795-4b53-8a21-5c842d3daa66</field>
+  </row>
+  <row>
+	<field name="contactid">306126</field>
+	<field name="contact_no">CON9</field>
+	<field name="accountid">306061</field>
+	<field name="salutation"></field>
+	<field name="firstname"></field>
+	<field name="lastname">Uff. Vendite</field>
+	<field name="email">commerciale@ribo.it</field>
+	<field name="phone"></field>
+	<field name="mobile"></field>
+	<field name="title"></field>
+	<field name="department"></field>
+	<field name="fax"></field>
+	<field name="reportsto">0</field>
+	<field name="training" xsi:nil="true" />
+	<field name="usertype" xsi:nil="true" />
+	<field name="contacttype" xsi:nil="true" />
+	<field name="otheremail" xsi:nil="true" />
+	<field name="secondaryemail"></field>
+	<field name="donotcall">0</field>
+	<field name="emailoptout">0</field>
+	<field name="imagename"></field>
+	<field name="reference">0</field>
+	<field name="notify_owner">0</field>
+	<field name="isconvertedfromlead">0</field>
+	<field name="tags"></field>
+	<field name="fe_cod_fisc"></field>
+	<field name="fe_cod_destinatario"></field>
+	<field name="fe_formato_trasmissione" xsi:nil="true" />
+	<field name="fe_codice_cig"></field>
+	<field name="fe_pec"></field>
+	<field name="fe_nome"></field>
+	<field name="fe_cognome"></field>
+	<field name="fe_cod_nazione"></field>
+	<field name="agent1">0</field>
+	<field name="agent2">0</field>
+	<field name="smart1identifier">65d4d173-24ca-40b9-a72c-eabcdf700365</field>
+	<field name="accountid">306061</field>
+	<field name="account_no">ACC1</field>
+	<field name="accountname">Farmacia Rossi</field>
+	<field name="parentid">0</field>
+	<field name="account_type">Customer</field>
+	<field name="industry" xsi:nil="true" />
+	<field name="annualrevenue">0.00000000</field>
+	<field name="rating" xsi:nil="true" />
+	<field name="ownership"></field>
+	<field name="siccode"></field>
+	<field name="tickersymbol" xsi:nil="true" />
+	<field name="phone">0123-1234567</field>
+	<field name="otherphone"></field>
+	<field name="email1">info@smart1.it</field>
+	<field name="email2"></field>
+	<field name="website"></field>
+	<field name="fax">0123-1234567</field>
+	<field name="employees">0</field>
+	<field name="emailoptout">0</field>
+	<field name="notify_owner">0</field>
+	<field name="isconvertedfromlead">0</field>
+	<field name="tags"></field>
+	<field name="fe_cod_fisc"></field>
+	<field name="fe_cod_destinatario"></field>
+	<field name="fe_formato_trasmissione" xsi:nil="true" />
+	<field name="fe_codice_cig"></field>
+	<field name="fe_pec"></field>
+	<field name="fe_nome"></field>
+	<field name="fe_cognome"></field>
+	<field name="fe_cod_nazione"></field>
+	<field name="algaccountvat">00871550240</field>
+	<field name="algaccountfc"></field>
+	<field name="agent1">14</field>
+	<field name="agent2">0</field>
+	<field name="smart1identifier">36b7a834-c795-4b53-8a21-5c842d3daa66</field>
+  </row>
+  <row>
+	<field name="contactid">306155</field>
+	<field name="contact_no">CON38</field>
+	<field name="accountid">306061</field>
+	<field name="salutation"></field>
+	<field name="firstname"></field>
+	<field name="lastname">Test</field>
+	<field name="email"></field>
+	<field name="phone"></field>
+	<field name="mobile"></field>
+	<field name="title"></field>
+	<field name="department"></field>
+	<field name="fax"></field>
+	<field name="reportsto">0</field>
+	<field name="training" xsi:nil="true" />
+	<field name="usertype" xsi:nil="true" />
+	<field name="contacttype" xsi:nil="true" />
+	<field name="otheremail" xsi:nil="true" />
+	<field name="secondaryemail"></field>
+	<field name="donotcall">0</field>
+	<field name="emailoptout">0</field>
+	<field name="imagename"></field>
+	<field name="reference">0</field>
+	<field name="notify_owner">0</field>
+	<field name="isconvertedfromlead">0</field>
+	<field name="tags"></field>
+	<field name="fe_cod_fisc"></field>
+	<field name="fe_cod_destinatario"></field>
+	<field name="fe_formato_trasmissione" xsi:nil="true" />
+	<field name="fe_codice_cig"></field>
+	<field name="fe_pec"></field>
+	<field name="fe_nome"></field>
+	<field name="fe_cognome"></field>
+	<field name="fe_cod_nazione"></field>
+	<field name="agent1">0</field>
+	<field name="agent2">0</field>
+	<field name="smart1identifier">5ab29eee-c7d4-4ace-a358-1f70e25e4d59</field>
+	<field name="accountid">306061</field>
+	<field name="account_no">ACC1</field>
+	<field name="accountname">Farmacia Rossi</field>
+	<field name="parentid">0</field>
+	<field name="account_type">Customer</field>
+	<field name="industry" xsi:nil="true" />
+	<field name="annualrevenue">0.00000000</field>
+	<field name="rating" xsi:nil="true" />
+	<field name="ownership"></field>
+	<field name="siccode"></field>
+	<field name="tickersymbol" xsi:nil="true" />
+	<field name="phone">0123-1234567</field>
+	<field name="otherphone"></field>
+	<field name="email1">info@smart1.it</field>
+	<field name="email2"></field>
+	<field name="website"></field>
+	<field name="fax">0123-1234567</field>
+	<field name="employees">0</field>
+	<field name="emailoptout">0</field>
+	<field name="notify_owner">0</field>
+	<field name="isconvertedfromlead">0</field>
+	<field name="tags"></field>
+	<field name="fe_cod_fisc"></field>
+	<field name="fe_cod_destinatario"></field>
+	<field name="fe_formato_trasmissione" xsi:nil="true" />
+	<field name="fe_codice_cig"></field>
+	<field name="fe_pec"></field>
+	<field name="fe_nome"></field>
+	<field name="fe_cognome"></field>
+	<field name="fe_cod_nazione"></field>
+	<field name="algaccountvat">00871550240</field>
+	<field name="algaccountfc"></field>
+	<field name="agent1">14</field>
+	<field name="agent2">0</field>
+	<field name="smart1identifier">36b7a834-c795-4b53-8a21-5c842d3daa66</field>
+  </row>
+</root>
