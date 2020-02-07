@@ -5,21 +5,19 @@ $a = new importXML();
 $a->clearLog();
 $a->connectToDB();
 
-$posXML = 0;
-$tempArray = $a->xmlToArray();
-foreach ($tempArray as $valueXML){
-    $tablenames = array_keys($a->tablemapping);
-    foreach ($a->tablemapping as $tablename => $fields) {
-        $insert = $a->generateInsert($valueXML);
-    }
-    $a->runInsert($insert, $tablenames);
-    $posXML++;
+
+$annunci = $a->xmlToArray();
+
+    
+foreach ($annunci as $annuncio){
+    $insert = $a->generateInsert($annuncio);
+    $a->runInsert();
 }
 
 
-
-
 die();
+
+
 class importXML {
     protected $db;
     protected $xmlFile;
@@ -27,6 +25,8 @@ class importXML {
     protected $logFilename;
     protected $arrayXml;
     protected $datasource;
+    protected $insert;
+    protected $othertable;
     
     function __construct($filename = 'proprieta.json', $logFilename = 'logImportXML'){
         $json = file_get_contents($filename);
@@ -34,6 +34,7 @@ class importXML {
         $this->xmlFile      = $map['xmlFile'];
         $this->tablemapping = $map['tablemapping'];
         $this->datasource   = $map['datasource'];
+        $this->othertable = $map['othertable'];
 
     }
     
@@ -56,16 +57,25 @@ class importXML {
            <campo1>valore</campo1>
            <campo2>valore</campo2>
            <campoN>valore</campoN>
+           <campoM>
+                <other>val</other>
+           </campoM>
        </sez1>    
        <sez2>
            <campo1>valore</campo1>
            <campo2>valore</campo2>
            <campoN>valore</campoN>
+           <campoM>
+                <other>val</other>
+           </campoM>
        </sez2>    
        <sezN>
            <campo1>valore</campo1>
            <campo2>valore</campo2>
            <campoN>valore</campoN>
+           <campoM>
+                <other>val</other>
+           </campoM>
        </sezN>    
     </root>
     * @param string $xml
@@ -88,6 +98,7 @@ class importXML {
         $firsttime = true; 
         
         foreach ($this->tablemapping as $tablename => $fields) {
+ 
             // Generazione di una Insert per ogni tabella
             $cnt = count($fields);
             $insert[$tablename] = 'insert into '.$tablename.' (';
@@ -121,8 +132,14 @@ class importXML {
                     $params[$key[$counter]] = $this->getValue($valueXML, $field[1]);
                 }
                 else if($field[0]=='sql'){
-                    $params[$key[$counter]] = $this->executeSql($field[1]);       
+                    $params[$key[$counter]] = $field[1]; // $this->executeSql($field[1]);       
                 }
+                else if($field[0]=='bool'){
+                    $params[$key[$counter]] = $this->getBoolValue($valueXML, $field[1]);
+                }/*
+                else if($field[0]=='multi'){
+                    $this->getMultiValue($id, $valueXML, $field);
+                }*/
                 $counter++;
             }
             $parameter[$tablename]=$params;
@@ -135,7 +152,19 @@ class importXML {
             $insert[$tablename] = substr($insert[$tablename], 0, strlen($insert[$tablename])-2); 
             $insert[$tablename].=')';  
         }
-        return $insert;
+        $this->insert = $insert;
+        
+        // per gestire tutti le insert che servono "strane"
+        foreach ($this->othertable as $tablename => $fields) {
+            $res = $this->handleTable($tablename);
+      
+            if($res===1){
+                foreach ($fields as $field){
+                    $this->insertFoto($id, $valueXML, $tablename, $field[1]);
+                }
+            }
+        }
+        
     }
     
     
@@ -171,6 +200,104 @@ class importXML {
     }
     
     
+    /**
+     * Quando si imposta 'bool' estrae valore corrispondente dall'array generato dal file Xml e se è 'no' mette 0 se è 'si' mette 1
+     * @param type $array
+     * @param type $key
+     * @return string
+     */
+    private function getBoolValue($array, $key){
+        $return = $array[$key];
+        if ($return == 'no'){
+            $return = 0;
+        }
+        else if ($return == 'si'){
+            $return = 1;
+        }
+        else if (is_array($return)){
+            if(empty($return)){
+              //  die (print_r($array));
+                $return = 'No Value';
+            }
+            else{
+                $return = array_map('strval', $return);
+            }
+        }        
+        else if ($return == null){
+            $return = 'NULL';
+        }        
+        
+        return $return;
+    }
+    
+    
+    private function handleTable($tablename){
+        if ($tablename == 'AMMedias'){
+            return 1;
+        }
+        else{
+            return false;
+        }
+    }
+    
+    
+    
+    
+
+    
+    private function insertFoto($id, $valueXML,$tablename, $field){
+        // unset($this->insert);
+        $tmp = $valueXML[$field];
+         if (!array_key_exists('AMFoto', $tmp))
+        {
+            return;
+        }
+        $tmp = $tmp['AMFoto'];
+        if (empty($tmp)){
+            return;
+        }
+        $id = '"'.$id.'"';
+        foreach($tmp as $foto){
+            // print_r($foto);
+           if (!is_array($foto)){
+                return;
+            }
+            if (!array_key_exists('Url', $foto))
+            {
+                return;
+            }
+            else{
+                $url = '"'.$foto['Url'].'"';
+            }
+            if (!array_key_exists('@attributes', $foto))
+            {
+                return ;
+            }
+            else{
+                
+                if (!array_key_exists('Tipo', $foto['@attributes']))
+                {
+                    $type = "'no data'";
+                }
+                else{
+                    $type = '"'.$foto['@attributes']['Tipo'].'"';
+                }
+                if (!array_key_exists('Ordine', $foto['@attributes']))
+                {
+                    $ordine = "'no data'";
+                }
+                else{
+                    $ordine = '"'.$foto['@attributes']['Ordine'].'"';
+                }
+                
+            }
+            // echo ("URL: $url -> TIPO: $type -> ORDINE: $ordine".PHP_EOL);
+            $this->insert[] = "insert into $tablename(idannuncio, url, tipo, sequence) values ($id, $url, $type, $ordine)";
+        }
+        // print_r ($this->insert);
+        return;
+        // die();
+    }
 
 
     /**
@@ -232,16 +359,17 @@ class importXML {
      * @param array $insert
      * @param string $tabs
      */
-    public function runInsert($insert, $tabs){
-        foreach ($tabs as $tab){
-            if(!$this->db->query($insert[$tab])){
-                echo $insert[$tab].PHP_EOL;
+    public function runInsert(){
+
+        foreach ($this->insert as $tmp){
+            if(!$this->db->query($tmp)){
+                echo $tmp.PHP_EOL;
                 echo 'Error query  ';
                 print_r($this->db->error);
                 echo PHP_EOL;
             }
-
         }
+
     }
     
     

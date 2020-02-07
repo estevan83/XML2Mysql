@@ -18,9 +18,9 @@ latituidine
 longitudine
 tipologia
 tipologia2
-categoria
-categoria
-categoria
+	categoria
+	categoria
+	categoria
 homepage
 investimento
 prestigio
@@ -57,6 +57,10 @@ balconi
 terrazzi
 piano
 livelli interni
+
+
+
+
 pianicondominio
 unitacondominio
 box

@@ -50,7 +50,7 @@ foreach ($arrayXml as $valueXML){
                 $params[$key[$counter]] = getValue($valueXML, $field[1]);
             }
             else if($field[0]=='sql'){
-                $params[$key[$counter]] = executeSql($field[1]);
+                $params[$key[$counter]] = $field[1];// executeSql($field[1]);
             }
             $counter++;
         }
